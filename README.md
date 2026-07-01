@@ -2,7 +2,7 @@
 
 Plateforme de data intelligence sur la Coupe du Monde 2026 : statistiques, résultats en direct et storytelling autour du tournoi, construite avec **SvelteKit**.
 
-Ce projet est le pendant front-end de [WC26 Pronostics API](https://github.com/TonPseudo/wc26-pronostics-api), une API REST développée en Symfony qui gère les pronostics et le classement communautaire. Les deux projets forment un écosystème connecté : WC2026 Hub consomme cette API pour afficher en direct les rencontres et leurs scores.
+Ce projet est le front-end de [WC26 Pronostics API](https://github.com/TonPseudo/wc26-pronostics-api), une API REST développée en Symfony qui récupére les scores des matchs de la coupe du monde 2026 qui gèrera des pronostics et un classement communautaire. Les deux projets forment un écosystème connecté : WC2026 Hub consomme cette API pour afficher en direct les rencontres et leurs scores.
 
 ## Stack technique
 
