@@ -2,7 +2,7 @@
 
 Plateforme de data intelligence sur la Coupe du Monde 2026 : statistiques, résultats en direct et storytelling autour du tournoi, construite avec **SvelteKit**.
 
-Ce projet est le front-end de [WC26 Pronostics API](https://github.com/TonPseudo/wc26-pronostics-api), une API REST développée en Symfony qui récupére les scores des matchs de la coupe du monde 2026 qui gèrera des pronostics et un classement communautaire. Les deux projets forment un écosystème connecté : WC2026 Hub consomme cette API pour afficher en direct les rencontres et leurs scores.
+Ce projet est le front-end de [WC26 Back End API](https://github.com/IlyesMouhsini/WC2026-IH-back-end-api.git), une API REST développée en Symfony qui récupére les scores des matchs de la coupe du monde 2026 qui gèrera des pronostics et un classement communautaire. Les deux projets forment un écosystème connecté : WC2026 Hub consomme cette API pour afficher en direct les rencontres et leurs scores.
 
 ## Stack technique
 
@@ -20,13 +20,13 @@ Direction « panneau de score de stade » : fond bleu nuit profond, accents dor�
 ## Fonctionnalités
 
 - Page d'accueil avec ticker de statistiques du tournoi et mise en avant des chiffres clés (équipes, pays hôtes, matchs)
-- Page **Statistiques** : liste de toutes les rencontres du Mondial 2026, synchronisées en direct depuis [WC26 Pronostics API](https://github.com/TonPseudo/wc26-pronostics-api), avec scores, statuts (à venir / en direct / terminé) et phase de compétition
+- Page **Statistiques** : liste de toutes les rencontres du Mondial 2026, synchronisées en direct depuis [WC26 Back End API](https://github.com/IlyesMouhsini/WC2026-IH-back-end-api.git), avec scores, statuts (à venir / en direct / terminé) et phase de compétition
 - Traduction d'affichage des noms d'équipes en français, indépendante des données sources
 - Design responsive, sombre, cohérent sur l'ensemble du site
 
 ## Connexion à l'API back-end
 
-Ce projet consomme l'API REST de [WC26 Pronostics API](https://github.com/TonPseudo/wc26-pronostics-api) (Symfony + API Platform), elle-même alimentée par une intégration avec l'API externe [football-data.org](https://www.football-data.org/).
+Ce projet consomme l'API REST de [WC26 Back End API](https://github.com/IlyesMouhsini/WC2026-IH-back-end-api.git) (Symfony + API Platform), elle-même alimentée par une intégration avec l'API externe [football-data.org](https://www.football-data.org/).
 
 L'URL de l'API est définie via une variable d'environnement publique, dans `.env` à la racine du projet :
 
@@ -41,7 +41,7 @@ Les appels sont centralisés dans un client Axios (`src/lib/api/client.js`), ré
 ### Prérequis
 
 - Node.js et npm
-- [WC26 Pronostics API](https://github.com/TonPseudo/wc26-pronostics-api) démarrée en local (pour que les pages de statistiques affichent des données)
+- [WC26 Back End API](https://github.com/IlyesMouhsini/WC2026-IH-back-end-api.git) démarrée en local (pour que les pages de statistiques affichent des données)
 
 ### Étapes
 
