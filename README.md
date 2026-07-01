@@ -94,4 +94,4 @@ src/
 
 ## Auteur
 
-Ilyès Mouhsini — étudiant BUT Informatique, IUT de Vélizy-Rambouillet (UVSQ)
+Ilyès Mouhsini - étudiant BUT Informatique, IUT de Vélizy-Rambouillet (UVSQ)
