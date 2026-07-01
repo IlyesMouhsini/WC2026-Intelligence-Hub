@@ -1,12 +1,12 @@
 <script>
-	import Hero from '$lib/components/Hero.svelte';
+	import Accueil from '$lib/components/Accueil.svelte';
 </script>
 
 <svelte:head>
 	<title>WC26 Hub — Coupe du Monde 2026</title>
 </svelte:head>
 
-<Hero />
+<Accueil />
 
 <!--
 	Prochaines sections à brancher ici au fur et à mesure :

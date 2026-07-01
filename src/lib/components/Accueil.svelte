@@ -32,7 +32,7 @@
 
 		<p class="mt-6 max-w-xl font-body text-base text-ink-300 md:text-lg">
 			WC26 Hub rassemble statistiques, pronostics et comparaisons pour suivre chaque
-			équipe, chaque joueur et chaque match de la Coupe du Monde 2026 — du premier
+			équipe, chaque joueur et chaque match de la Coupe du Monde 2026 du premier
 			coup d'envoi à la finale.
 		</p>
 
