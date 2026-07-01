@@ -1,9 +1,14 @@
-<script lang="ts">
-	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+<script>
+	import '../app.css';
+	import Navbar from '$lib/components/Navbar.svelte';
+	import Ticker from '$lib/components/Ticker.svelte';
 
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
-{@render children()}
+<Navbar />
+<!-- <Ticker />-->
+
+<main>
+	{@render children()}
+</main>

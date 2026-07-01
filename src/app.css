@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+	--color-pitch-950: #0a0e13;
+	--color-pitch-900: #0e141b;
+	--color-pitch-800: #141c25;
+	--color-pitch-700: #1c2731;
+	--color-pitch-600: #2a3742;
+
+	--color-gold-400: #e0bc4f;
+	--color-gold-500: #c9a227;
+	--color-gold-600: #a8841c;
+
+	--color-grass-400: #4d9670;
+	--color-grass-500: #2f6f4e;
+	--color-grass-600: #20553a;
+
+	--color-ink-100: #edeff2;
+	--color-ink-300: #aeb6c2;
+	--color-ink-500: #8b93a1;
+
+	--font-display: 'Big Shoulders Display', sans-serif;
+	--font-body: 'Inter', sans-serif;
+	--font-mono: 'IBM Plex Mono', monospace;
+}
+
+@layer base {
+	body {
+		@apply bg-pitch-950 text-ink-100 font-body antialiased;
+	}
+}
+
+@utility bg-pitch-lines {
+	background-image: repeating-linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0.025) 0px,
+		rgba(255, 255, 255, 0.025) 1px,
+		transparent 1px,
+		transparent 64px
+	);
+}
+
+@utility text-stat {
+	font-family: 'IBM Plex Mono', monospace;
+	font-variant-numeric: tabular-nums;
+}
+
+@utility marquee-track {
+	animation: marquee 28s linear infinite;
+}
+
+.marquee-track:hover {
+	animation-play-state: paused;
+}
+
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.marquee-track {
+		animation: none;
+	}
+}
