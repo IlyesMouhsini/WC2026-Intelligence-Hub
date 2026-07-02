@@ -52,10 +52,10 @@
 
 			<div class="mt-9 flex flex-wrap items-center gap-4">
 				<a
-					href="/stats"
+					href="/matchs"
 					class="flex items-center gap-2 rounded-sm bg-gold-500 px-6 py-3 font-body text-sm font-semibold text-pitch-950 transition-colors hover:bg-gold-400"
 				>
-					Voir les statistiques
+					Voir les matchs
 					<ArrowRight size={16} />
 				</a>
 				<a
