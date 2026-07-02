@@ -4,10 +4,12 @@
 	let mobileOpen = $state(false);
 
 	const links = [
+		{ label: 'Matchs', href: '/matchs' },
 		{ label: 'Statistiques', href: '/stats' },
 		{ label: 'Pronostics', href: '/predictions' },
 		{ label: 'Comparateur', href: '/compare' },
 		{ label: 'Récits', href: '/storytelling' }
+		
 	];
 </script>
 
